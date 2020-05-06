@@ -1,4 +1,5 @@
-# big_tv
+## big_tv (Flask Full responsive W3.css restfull web app)
+
 full responsive template using w3.css,css, flexbox, and media query (movies and tv series website) 
 
 ## what is this:
@@ -21,3 +22,5 @@ Check It :https://victuallessbeardeddragon.htmlpasta.com/
 
 <img src="Fianl.PNG">
 <img src="p1.PNG">
+
+Developed By Python and JavaScript King: Mahmoud Hegazi
