@@ -16,7 +16,24 @@
 
 
 
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
 
+}
+
+.flex-container .cover {
+
+  width: 400px;
+  height: 300px;
+  margin: 10px;
+  text-align: center;
+  font-size: 30px;
+    background-image:url('https://static.toiimg.com/photo/54164459/Thomson-32HDL815LF33-315-inch-LED-HD-Ready-TV.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: green;
+}
 
 </style>
 
@@ -59,21 +76,27 @@
   </div>
 
   <div class="w3-row-padding">
+
+<div class="flex-container">
+
   <!-- % if seriess % -->
   <!-- % for serie in seriess % -->
+  
+  <div class="cover">  
+  <img class="seris_img" src="https://elwekalanews.net/wp-content/uploads/2020/04/%D9%85%D8%B3%D9%84%D8%B3%D9%84-%D8%A7%D9%84%D9%86%D9%87%D8%A7%D9%8A%D8%A9.jpg" alt="series photo" width="97%" height="70%" style="margin-top:30px;margin-left:7px">
+   </div>
    
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-padding" style="background:#990000;color:white;">Watch The End</div>
-        <div class="myseries" style="width:380px;height:300px;">
-        <img class="seris_img" src="https://elwekalanews.net/wp-content/uploads/2020/04/%D9%85%D8%B3%D9%84%D8%B3%D9%84-%D8%A7%D9%84%D9%86%D9%87%D8%A7%D9%8A%D8%A9.jpg" alt="series photo" width="97%" height="70%" style="margin-top:30px;margin-left:7px">
-        </div>
-      </div>
-      
-    </div>
+   <!-- % endfor % -->
+  <!-- % endif %  -->  
+   
+
+  <div class="cover">
+  <img class="seris_img" src="https://mediaaws.almasryalyoum.com/news/large/2020/04/09/1216762_0.jpg" alt="series photo" width="97%" height="70%" style="margin-top:30px;margin-left:7px">
+  </div>
+</div>
+
     
-  <!-- % endfor % -->
-  <!-- % endif %  -->
+
   
   
   </div>
@@ -86,37 +109,23 @@
   </div>
 
   <div class="w3-row-padding">
-  <!-- % if movies % -->
-  <!-- % for movie in movies % -->
+
+<div class="flex-container">
+
+  <!-- % if seriess % -->
+  <!-- % for serie in seriess % -->
+  
+  <div class="cover">  
+  <img class="seris_img" src="https://mana.net/wp-content/uploads/2019/10/jok1.jpg" alt="series photo" width="97%" height="70%" style="margin-top:30px;margin-left:7px">
+   </div>
    
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container" class="mymovie" style="width:380px;height:300px;">
-        <div class="w3-display-topleft w3-padding" style="background:#001a0d;color:white;">Watch Joker</div>
-        <div>
-        <img class="seris_img" src="https://mana.net/wp-content/uploads/2019/10/jok1.jpg" alt="movie photo" width="97%" height="70%" style="margin-top:30px;margin-left:7px">
-        </div>
-      </div>      
-    </div>
-    
-        <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container" class="mymovie" style="width:380px;height:300px;">
-        <div class="w3-display-topleft w3-padding" style="background:#001a0d;color:white;">Watch Joker</div>
-        <div>
-        <img class="seris_img" src="https://mana.net/wp-content/uploads/2019/10/jok1.jpg" alt="movie photo" width="97%" height="70%" style="margin-top:30px;margin-left:7px">
-        </div>
-      </div>      
-    </div>
-    
-        <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container" class="mymovie" style="width:380px;height:300px;">
-        <div class="w3-display-topleft w3-padding" style="background:#001a0d;color:white;">Watch Joker</div>
-        <div>
-        <img class="seris_img" src="https://mana.net/wp-content/uploads/2019/10/jok1.jpg" alt="movie photo" width="97%" height="70%" style="margin-top:30px;margin-left:7px">
-        </div>
-      </div>      
-    </div>
-  <!-- % endfor % -->
- <!-- % endif % -->
+   <!-- % endfor % -->
+  <!-- % endif %  -->  
+   
+
+  <div class="cover"></div>
+</div>
+
   </div>
 
   <!-- Contact Section -->
