@@ -37,6 +37,7 @@
     background-image:url('https://static.toiimg.com/photo/54164459/Thomson-32HDL815LF33-315-inch-LED-HD-Ready-TV.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  cursor: pointer;
 
 }
 
@@ -61,13 +62,16 @@
 }
 
 .container_main {
-  text-align: center;  
+  text-align: center;
+  
 }
 
 .series_name {
-  background-color: black;
+  color: black;
+  background-image:url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/pf-s48-ted-0138-jj_2.jpg?w=800&dpr=1&fit=default&crop=default&auto=format&fm=pjpg&q=75&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=42607d73fa95e64b0827888328d968c6');
   padding: 10px;
-  color: white;
+  font-weight: bold;
+  cursor: pointer;
 }
 </style>
 
@@ -152,18 +156,20 @@
 
   <!-- % if seriess % -->
   <!-- % for serie in seriess % -->
-  
+<div class="container_main">
+<span class="series_name">Joker</span>
   <div class="cover">  
   <img class="seris_img" src="https://mana.net/wp-content/uploads/2019/10/jok1.jpg" alt="series photo" width="95%" height="70%" style="margin-top:30px;margin-left:7px">
    </div>
-   
+ </div>
    <!-- % endfor % -->
   <!-- % endif %  -->  
    
-
+<div class="container_main">
+<span class="series_name">Null</span>
   <div class="cover"></div>
 </div>
-
+ </div>
   </div>
 
   <!-- Contact Section -->
@@ -199,3 +205,4 @@
 
 </body>
 </html>
+
