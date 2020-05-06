@@ -43,10 +43,10 @@ def bigtvJSON():
 
 
 
-# Show all restaurants
+# Show all series and movies
 @app.route('/')
 @app.route('/bigtv/', methods=['GET', 'POST'])
-def showCars():
+def showAll():
     movies = session.query(Movie).order_by(asc(Movie.name))
     series = session.query(Series).order_by(asc(Series.name))
     return render_template('index.html', movies=movies, series = series)
