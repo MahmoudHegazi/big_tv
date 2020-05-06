@@ -3,5 +3,5 @@ full responsive template using w3.css,css, flexbox, and media query (movies and 
 
 Check It :https://victuallessbeardeddragon.htmlpasta.com/
 
-<img src="im1.PNG">
-<img src="im2.PNG">
+<img src="p1.PNG">
+<img src="p_less370.PNG">
