@@ -79,6 +79,11 @@ body, html {
 .closebtn {
   cursor: pointer;
 }
+
+.tagname {
+  width: 200px;
+  text-align: center;
+}
 </style>
 <body>
 
@@ -112,7 +117,7 @@ body, html {
 <!-- {% if series %} --> 
 <div class="bgimg- w3-display-container myframe" id="video">
   <div class="w3-center w3-transparent w3-padding-64 myfram">
-<iframe id="videoframe" width="853" height="480" src="//ok.ru/videoembed/1631906171447" frameborder="0"  allowfullscreen></iframe>
+<iframe id="videoframe" width="853" height="480" src="//ok.ru/videoembed/1631906171447aa" frameborder="0"  allowfullscreen></iframe>
 </iframe>
   </div>
 </div>
@@ -155,23 +160,23 @@ for (i = 0; i < close.length; i++) {
 <div class="w3-content w3-container">
   <h1 class="w3-center">Tags</h1> 
   <div class="tags_container">
-   <a href="#">مسلسل النهاية</a>
-   <a href="#">النهاية</a>
-   <a href="#">مسلسلات رمضان 2020</a>
-  <a href="#">مسلسلات يوسف الشريف</a>
-  <a href="#">مشاهدة مسلسل النهاية</a>
-  <a href="#">يوسف الشريف</a>
-  <a href="#">مسلسلات</a>
-  <a href="#">مسلسل</a>
-  <a href="#">النهاية يوسف الشريف</a>
-  <a href="#">مسلسل المهاية اونلاين</a>
-  <a href="#">مشاهدة النهاية</a>
-  <a href="#">مشاهدة النهاية يوسف الشريف</a>
-  <a href="#">حلقات مسلسل النهاية</a>
-  <a href="#">النهاية جودة HD</a>
-  <a href="#">مشاهدة مسلسل النهاية بجودة عالية</a>
-  <a href="#">النهاية الحلقة الاولي</a>
-  <a href="#">online the end </a></div>
+  <a href="#" class="tagname" >مسلسل النهاية</a>
+  <a href="#" class="tagname" >النهاية</a>
+  <a href="#" class="tagname" >مسلسلات رمضان 2020</a>
+  <a href="#" class="tagname" >مسلسلات يوسف الشريف</a>
+  <a href="#" class="tagname" >مشاهدة مسلسل النهاية</a>
+  <a href="#" class="tagname" >يوسف الشريف</a>
+  <a href="#" class="tagname" >مسلسلات</a>
+  <a href="#" class="tagname" >مسلسل</a>
+  <a href="#" class="tagname" >النهاية يوسف الشريف</a>
+  <a href="#" class="tagname" >مسلسل المهاية اونلاين</a>
+  <a href="#" class="tagname" >مشاهدة النهاية</a>
+  <a href="#" class="tagname" >مشاهدة النهاية يوسف الشريف</a>
+  <a href="#" class="tagname" >حلقات مسلسل النهاية</a>
+  <a href="#" class="tagname" >النهاية جودة HD</a>
+  <a href="#" class="tagname" >مشاهدة مسلسل النهاية بجودة عالية</a>
+  <a href="#" class="tagname" >النهاية الحلقة الاولي</a>
+  <a href="#" class="tagname" >online the end </a></div>
 
     <!-- Hide this text on small devices -->
 
@@ -250,21 +255,36 @@ function toggleFunction() {
 
 
 const player = document.getElementById('videoframe');
+const tags = document.querySelectorAll('.tagname');
 
 if (window.innerWidth < 300) {
   player.style.width = "250px";
   player.style.height = "250px";
+  for (const tag of tags) {
+  tag.style.background = "crimson"; 
+  
+  }
 }
+
 
 if (window.innerWidth > 300  &&  window.innerWidth < 600) {
   player.style.width = "300px";
   player.style.height = "300px";
+  for (const tag of tags) {
+  tag.style.background = "#88b04b"; 
+  
+  }
 }
 
 if (window.innerWidth > 600  &&  window.innerWidth < 800) {
   player.style.width = "500px";
   player.style.height = "400px";
+  for (const tag of tags) {
+  tag.style.background = "#88b04b"; 
+  
+  }
 }
+
 
 
 if (window.innerWidth > 800  &&  window.innerWidth < 1200) {
@@ -275,6 +295,10 @@ if (window.innerWidth > 800  &&  window.innerWidth < 1200) {
 if (window.innerWidth > 1200) {
   player.style.width = "1280px";
   player.style.height = "720px";
+  for (const tag of tags) {
+  tag.style.background = "#009b77"; 
+  
+  }
 }
     
     
@@ -282,3 +306,4 @@ if (window.innerWidth > 1200) {
 
 </body>
 </html>
+
