@@ -34,6 +34,8 @@ body, html {
 }
 
 
+
+
 .tags_container {
   display: flex;
   flex-wrap: wrap;
@@ -110,7 +112,7 @@ body, html {
 <!-- {% if series %} --> 
 <div class="bgimg- w3-display-container myframe" id="video">
   <div class="w3-center w3-transparent w3-padding-64 myfram">
-<iframe width="853" height="480" src="//ok.ru/videoembed/1631906171447" frameborder="0"  allowfullscreen></iframe>
+<iframe id="videoframe" width="853" height="480" src="//ok.ru/videoembed/1631906171447" frameborder="0"  allowfullscreen></iframe>
 </iframe>
   </div>
 </div>
@@ -243,6 +245,39 @@ function toggleFunction() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
+
+// Made some rules to make the video fit all devices 
+
+
+const player = document.getElementById('videoframe');
+
+if (window.innerWidth < 300) {
+  player.style.width = "250px";
+  player.style.height = "250px";
+}
+
+if (window.innerWidth > 300  &&  window.innerWidth < 600) {
+  player.style.width = "300px";
+  player.style.height = "300px";
+}
+
+if (window.innerWidth > 600  &&  window.innerWidth < 800) {
+  player.style.width = "500px";
+  player.style.height = "400px";
+}
+
+
+if (window.innerWidth > 800  &&  window.innerWidth < 1200) {
+  player.style.width = "720px";
+  player.style.height = "400px";
+}
+
+if (window.innerWidth > 1200) {
+  player.style.width = "1280px";
+  player.style.height = "720px";
+}
+    
+    
 </script>
 
 </body>
