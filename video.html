@@ -114,14 +114,14 @@ body, html {
 
 
 <!-- video player -->
-<!-- {% if series %} --> 
+{% if series %} 
 <div class="bgimg- w3-display-container myframe" id="video">
   <div class="w3-center w3-transparent w3-padding-64 myfram">
-<iframe id="videoframe" width="853" height="480" src="//ok.ru/videoembed/1631906171447aa" frameborder="0"  allowfullscreen></iframe>
+<iframe id="videoframe" width="853" height="480" src="{{series.ep1}}" frameborder="0"  allowfullscreen></iframe>
 </iframe>
   </div>
 </div>
-<!-- {% endif %} -->
+ {% endif %} 
 
 
 <!-- start of Flash messages -->
@@ -181,25 +181,145 @@ for (i = 0; i < close.length; i++) {
     <!-- Hide this text on small devices -->
 
 
-<!-- Second Parallax Image with Portfolio Text -->
 
 
-<!-- Container (Portfolio Section) -->
+
+<!-- Container (all series Section) -->
+
+{% if series %}
 <div class="w3-content w3-container w3-padding-64" id="episodes">
   <h3 class="w3-center">All Episodes</h3>
 <br>
 
+
+
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    <div class="w3-col m3"><span>الحلقة الاولي</span>
+      <img src="{{ series.image }}" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+      
+    </div>  
+
+      <div class="w3-col m3"><span>الحلقة الاولي</span>
+      <img src="{{ series.image }}" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>  
+    
+        <div class="w3-col m3"><span>الحلقة الثانية</span>
+      <img src="{{ series.image }}" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
     </div>
-
-
+    
+        <div class="w3-col m3"><span>الحلقة الثالثة</span>
+      <img src="{{ series.image }}" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+    
+        <div class="w3-col m3"><span>الحلقة الرابعة</span>
+      <img src="{{ series.image }}" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+    
+        <div class="w3-col m3"><span>الحلقة الخامسة</span>
+      <img src="{{ series.image }}" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+    
+        <div class="w3-col m3"><span>الحلقة السادسة</span>
+      <img src="{{ series.image }}" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+    
+        <div class="w3-col m3"><span>الحلقة السابعة</span>
+      <img src="{{ series.image }}" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+    
+        <div class="w3-col m3"><span>الحلقة الثامنة</span>
+      <img src="{{ series.image }}" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+    
+        <div class="w3-col m3"><span>الحلقة التاسعة</span>
+      <img src="{{ series.image }}" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+    
+        <div class="w3-col m3"><span>الحلقة العاشرة</span>
+      <img src="{{ series.image }}" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+        <div class="w3-col m3"><span>الحلقة الحادية عشر</span>
+      <img src="{{ series.image }}" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+    
+        <div class="w3-col m3"><span>الحلقة الثانية عشر</span>
+      <img src="{{ series.image }}" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+    
+        <div class="w3-col m3"><span>الحلقة الثالثة عشر</span>
+      <img src="{{ series.image }}" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+    
+        <div class="w3-col m3"><span>الحلقة الرابعة عشر</span>
+      <img src="{{ series.image }}" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+    
+        <div class="w3-col m3"><span>الحلقة الخامسة عشر</span>
+      <img src="{{ series.image }}" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+    
+        <div class="w3-col m3"><span>الحلقة السادسة عشر</span>
+      <img src="{{ series.image }}" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+    
+        <div class="w3-col m3"><span>الحلقة السابعة عشر</span>
+      <img src="{{ series.image }}" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+    
+        <div class="w3-col m3"><span>الحلقة الثامنة عشر</span>
+      <img src="{{ series.image }}" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+    
+        <div class="w3-col m3"><span>الحلقة العشرون</span>
+      <img src="{{ series.image }}" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+    
+        <div class="w3-col m3"><span>الحلقة الحادية والعشرون</span>
+      <img src="{{ series.image }}" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+    
+        <div class="w3-col m3"><span>الحلقة الثانية والعشرون</span>
+      <img src="{{ series.image }}" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+    
+        <div class="w3-col m3"><span>الحلقة الثالثة و العشرون</span>
+      <img src="{{ series.image }}" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+    
+        <div class="w3-col m3"><span>الحلقة الرابعة والعشرون</span>
+      <img src="{{ series.image }}" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+    
+        <div class="w3-col m3"><span>الحلقة الخامسة والعشرون</span>
+      <img src="{{ series.image }}" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+    
+        <div class="w3-col m3"><span>الحلقة السادسة والعشرون</span>
+      <img src="{{ series.image }}" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+    
+        <div class="w3-col m3"><span>الحلقة السابعة والعشرون</span>
+      <img src="{{ series.image }}" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+    
+        <div class="w3-col m3"><span>الحلقة الثامنة والعشرون</span>
+      <img src="{{ series.image }}" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+    
+        <div class="w3-col m3"><span>الحلقة التاسعة والعشرون</span>
+      <img src="{{ series.image }}" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+    
+        <div class="w3-col m3"><span>الحلقة الثلاثون</span>
+      <img src="{{ series.image }}" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+    
+    
   <!--  <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button> -->
   </div>
 </div>
-
+{% endif %}
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
   <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
@@ -306,4 +426,3 @@ if (window.innerWidth > 1200) {
 
 </body>
 </html>
-
