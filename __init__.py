@@ -43,16 +43,21 @@ def bigtvJSON():
 
 
 
-# Show all series and movies
+# Show all restaurants
 @app.route('/')
 @app.route('/bigtv/', methods=['GET', 'POST'])
-def showAll():
+def showIndex():
     movies = session.query(Movie).order_by(asc(Movie.name))
     series = session.query(Series).order_by(asc(Series.name))
     return render_template('index.html', movies=movies, series = series)
-    
+
+
+@app.route('/bigtv/series/<int:series_id>/JSON')
+def showSeries(series_id):
+    series = session.query(Series).filter_by(id=series_id).one()
+    return render_template('video.html', series = series)
 
 if __name__ == '__main__':
-    app.secret_key = 'super_secret_key_forsideinrange(5):print(.##heLlowOrld!@#)'
+    app.secret_key = 'super_secret_key'
     app.debug = True
     app.run(host='0.0.0.0', port=5000, threaded=False)
