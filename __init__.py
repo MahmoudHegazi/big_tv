@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 from flask import Flask, render_template, request, redirect, jsonify, url_for, flash
 from sqlalchemy import create_engine, asc
 from sqlalchemy.orm import sessionmaker
-from database_setup import Base, Menu, Series, Movie
+from database_setup import Base, Menu, Series, Movie, Item
 from flask import session as login_session
 import random
 import string
@@ -52,12 +54,18 @@ def showIndex():
     return render_template('index.html', movies=movies, series = series)
 
 
-@app.route('/bigtv/series/<int:series_id>/JSON')
-def showSeries(series_id):
-    series = session.query(Series).filter_by(id=series_id).one()
-    return render_template('video.html', series = series)
+@app.route('/bigtv/series/<int:series_id>/episode/<int:content_id>/')
+def showSeries(series_id, content_id):
+    series = session.query(Series).filter_by(id=series_id).first()
+    boots =  session.query(Item).filter_by(series_id=1).all()
+    episode = session.query(Item).filter_by(id=1).first()
+    print('1' + str(series))
+    print('2' + str(boots))
+    print(u'hi %s' %episode.name)
+    return render_template('video.html', series = series, boots = boots, episode=episode)
 
 if __name__ == '__main__':
     app.secret_key = 'super_secret_key'
     app.debug = True
     app.run(host='0.0.0.0', port=5000, threaded=False)
+
