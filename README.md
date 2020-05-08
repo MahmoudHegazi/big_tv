@@ -14,7 +14,8 @@ What I finished until now?
 5.  tested and fixed the error prevent from start
 6.  lunched the database_setup.py then the lotsofitems.py then last step run the __init__.py
 7.  Checked it then edit the errors in the style rerun it again then added to githup
-
+8.  created HTML video page for searies added jinja to it and taste it added 30 eposide to each series
+9.  edited the database and lotsofitems.py files (tested and work fine)
 
 
 Check It :https://victuallessbeardeddragon.htmlpasta.com/
