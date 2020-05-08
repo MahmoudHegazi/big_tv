@@ -24,6 +24,36 @@ series1 = Series(name="The End", description="In 2120 an engineer tries to solve
                   hero="youssef el sherif" ,
                   image="https://elwekalanews.net/wp-content/uploads/2020/04/%D9%85%D8%B3%D9%84%D8%B3%D9%84-%D8%A7%D9%84%D9%86%D9%87%D8%A7%D9%8A%D8%A9.jpg",
                   url='test.html', date='5/24/2020',
+                  ep1='//ok.ru/videoembed/1344782207682',
+                  ep2='//ok.ru/videoembed/1472119441986',
+                  ep3='//ok.ru/videoembed/1724586134091',
+                  ep4='//ok.ru/videoembed/2504808532684',
+                  ep5='//ok.ru/videoembed/1475410463298',
+                  ep6='//ok.ru/videoembed/1377466387005',
+                  ep7='//ok.ru/videoembed/1729532594763',
+                  ep8='//ok.ru/videoembed/1731037956683',
+                  ep9='//ok.ru/videoembed/1480086456898',
+                  ep10='//ok.ru/videoembed/1382036539965',
+                  ep11='//ok.ru/videoembed/1632351685145',
+                  ep12='//ok.ru/videoembed/1483443014210',
+                  ep13='//ok.ru/videoembed/1630699915831',
+                  ep14='//ok.ru/videoembed/1631906171447',
+                  ep15='//ok.ru/videoembed/1631906171447',
+                  ep16='//ok.ru/videoembed/1631906171447',
+                  ep17='//ok.ru/videoembed/1631906171447',
+                  ep18='//ok.ru/videoembed/1631906171447',
+                  ep19='//ok.ru/videoembed/1631906171447',
+                  ep20='//ok.ru/videoembed/1631906171447',
+                  ep21='//ok.ru/videoembed/1631906171447',
+                  ep22='//ok.ru/videoembed/1631906171447',
+                  ep23='//ok.ru/videoembed/1631906171447',
+                  ep24='//ok.ru/videoembed/1631906171447',
+                  ep25='//ok.ru/videoembed/1631906171447',
+                  ep26='//ok.ru/videoembed/1631906171447',
+                  ep27='//ok.ru/videoembed/1631906171447',
+                  ep28='//ok.ru/videoembed/1631906171447',
+                  ep29='//ok.ru/videoembed/1631906171447',
+                  ep30='//ok.ru/videoembed/1631906171447',                  
                   menu=type1)
 
 session.add(series1)
@@ -83,5 +113,7 @@ session.add(series1)
 session.commit()
 
 print "added menu items!"
+
+
 
 
