@@ -51,7 +51,7 @@ body, html {
 }
 
 .myframe {
-  background-image: url('https://fosta-tv.com:81/video/uploads/articles/0b6f93fb.jpg');
+  
   background-size: cover;
   
 }
@@ -115,13 +115,14 @@ body, html {
 
 <!-- video player -->
 {% if series %} 
-<div class="bgimg- w3-display-container myframe" id="video">
+<div class="bgimg- w3-display-container myframe" id="video" style="background-image:url({{series.image}});">
   <div class="w3-center w3-transparent w3-padding-64 myfram">
 <iframe id="videoframe" width="853" height="480" src="{{series.ep1}}" frameborder="0"  allowfullscreen></iframe>
 </iframe>
   </div>
 </div>
  {% endif %} 
+
 
 
 <!-- start of Flash messages -->
@@ -426,3 +427,4 @@ if (window.innerWidth > 1200) {
 
 </body>
 </html>
+
